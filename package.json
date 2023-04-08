@@ -1,0 +1,36 @@
+{
+	"name": "obx",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"build": "rimraf ./build && tsc",
+		"start": "npm run build && node build/index.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/charlesonunze/obx.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/charlesonunze/obx/issues"
+	},
+	"homepage": "https://github.com/charlesonunze/obx#readme",
+	"dependencies": {
+		"amqplib": "^0.10.3",
+		"dotenv": "^16.0.3",
+		"express": "^4.18.2",
+		"jest-cucumber": "^3.0.1",
+		"lodash": "^4.17.21",
+		"pg": "^8.10.0",
+		"reflect-metadata": "^0.1.13",
+		"typeorm": "^0.3.9",
+		"typescript": "^5.0.3",
+		"winston": "^3.8.2"
+	},
+	"devDependencies": {
+		"@types/amqplib": "^0.10.1"
+	}
+}

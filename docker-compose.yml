@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '4444:3000'
+    environment:
+      - DATABASE_URL=postgres://mmfovcbe:KMuCmaxZTu37Vrkss9QI140eVKj-yz-E@dumbo.db.elephantsql.com/mmfovcbe
+      - AMQP_URL=amqps://nrzkjkml:peN4mHPUaNip6Azr__-JuP_DymNNmgrL@kebnekaise.lmq.cloudamqp.com/nrzkjkml
